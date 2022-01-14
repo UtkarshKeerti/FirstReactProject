@@ -1,0 +1,46 @@
+.hero_sec {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.hero_sec .Main_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hero_sec .Secondary_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.hero_sec h1 {
+  position: absolute;
+  bottom: 40%;
+  left: 10%;
+  color: white;
+}
+.hero_sec p {
+  position: absolute;
+  bottom: 35%;
+  left: 10%;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero_sec h1 {
+    font-size: 1.5rem;
+  }
+  .hero_sec p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero_sec h1 {
+    font-size: 1rem;
+  }
+  .hero_sec p {
+    font-size: 0.5rem;
+  }
+}

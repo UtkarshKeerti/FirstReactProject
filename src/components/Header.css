@@ -1,0 +1,42 @@
+.top_head {
+  width: 100%;
+}
+.head-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.searchbar input {
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 0px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  .head-cont {
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .head-cont {
+    display: none;
+  }
+  .top_head {
+    background: #f8f9fa;
+    height: 30px;
+  }
+}
