@@ -9,14 +9,14 @@ const header = () => {
       <div className="head-cont">
         <div className="navbar_brand"><img src={myImg} alt="" /></div>
         <div className="searchbar"><Form className="d-flex">
-          <FormControl cl
+          <FormControl
             type="search"
             placeholder="Search for your favorite groups in ATG"
             className="me-2"
             aria-label="Search"
           />
         </Form></div>
-        <div className="navbar_right"><p>Create account. <a href="#">It’s free!</a></p></div>
+        <div className="navbar_right"><p>Create account. <a id="head_a" href="#">It’s free!</a></p></div>
       </div>
     </div>
   )

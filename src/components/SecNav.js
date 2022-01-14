@@ -1,16 +1,24 @@
 import React from 'react'
 import './SecNav.css'
-
+import { Link } from "react-router-dom";
 
 const SecNav = () => {
   return (
     <div className="SecNavCont">
       <div className="SecNav">
         <ul>
-          <li>All Posts(32)</li>
-          <li>Article</li>
-          <li>Event</li>
-          <li>Education</li>
+          <li>
+            <Link to="/">All Posts</Link>
+          </li>
+          <li>
+            <Link to="/article">Article</Link>
+          </li>
+          <li>
+            <Link to="/event">Event</Link>
+          </li>
+          <li>
+            <Link to="/education">Education</Link>
+          </li>
         </ul>
         <div className="btn_grp">
           <button>Write a Post</button>

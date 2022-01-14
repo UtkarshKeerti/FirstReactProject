@@ -1,16 +1,26 @@
 import React from 'react';
 import './App.css';
-import HeaderComp from './components/Header'
-import HeroSection from './components/Hero_section';
-import SecNav from './components/SecNav';
+import AllPost from './components/AllPosts';
+import Article from './components/Article';
+import Event from './components/Event';
+import Education from './components/Education';
+import NoMatch from './components/NoMatch';
+import { Routes, Route } from "react-router-dom";
+import Layout from './components/Layout';
 
 function App() {
   return (
     <div className="mother-cont">
-      <HeaderComp></HeaderComp>
-      <HeroSection></HeroSection>
-      <SecNav></SecNav>
-    </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<AllPost />} />
+          <Route path="article" element={<Article />} />
+          <Route path="event" element={<Event />} />
+          <Route path="education" element={<Education />} />
+          <Route path="*" element={<NoMatch />} />
+        </Route>
+      </Routes>
+    </div >
   );
 }
 
